@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Interview</title>
+</head>
+<body>
+    <h1>Interview Question</h1>
+    <p>{{ question }}</p>
+    <form action="{{ url_for('submit_answer') }}" method="POST">
+        <textarea name="answer" rows="5" cols="50" placeholder="Write your answer here"></textarea>
+        <br>
+        <button type="submit">Submit Answer</button>
+    </form>
+</body>
+</html>
